@@ -1,16 +1,45 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Заголовок документу</title>
-    <meta charset="utf-8" />
-  </head>
-  <body>
-    <img src="https://www.w3schools.com/tags/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+<! DOCTYPE html >
+< html >
+    <голова>
+        <div> _ _
+            {{#з автомобілем}}
+              <div> _ _
+                < h1 >{{name}}</ h1 >
 
-    <map name="workmap">
-      <area shape="rect" coords="34,44,270,350" alt="Computer" href="#comp">
-      <area shape="rect" coords="290,172,333,250" alt="Phone" href="#phone">
-      <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="#coffee">
-    </map>
-  </body>
-</html>
+                {{#з даними}}
+                <div>
+                   <p>{{data: make={'Toyota'} }}</p>
+                   <h1>{{модель:"Camry"}}</h1>
+                   <h2>{{дані: рік "2022"}}</h2>
+                   <h3>{{колір: срібний}}</h3>
+                </div>
+                {{/з}}
+                    <br>
+
+
+                {{#кожні дані}}
+                   <div>
+                     <span>{{material: 'leather'}}</span>
+                     <samp>{{color: 'black'}}}</samp>
+                     <b>{{heted: true}}</b>
+                     <p>{{ventilated: true}}</p>
+                   </div>
+                {{/кожний}}
+                    <br>
+
+                 {{#кожні типи}}
+                 <div>
+                    <h4>{{material: 'plastic'}}</h4>
+                    <h5>{{колір: 'чорний'}}</h5>
+                    <h6>{{type: 'LCD'}}</h6>
+                    <var>{{size: 10.1}}</var>
+                    <abbr>{{роздільна здатність: '1280x720'}}</abbr>
+                    <ul>{{сенсорний екран: правда}}</ul>
+                 </div>
+                 {{/кожний}}
+                    <br>
+              </div>
+            {{/з}}
+        </div>
+    </head>
+</ html >
