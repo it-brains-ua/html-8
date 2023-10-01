@@ -8,11 +8,11 @@
 
                 {{#with data}}
                 <div>
-                   <p>{{name: 'Facebook'}}</p>
-                   <h1>{{id: 1}}</h1>
-                   <h2>{{name: 'John Doe'}}</h2>
-                   <h3>{{gender: 'Male'}}</h3>
-                   <h4>{{age: 30}}</h4>
+                   <p>name:{{name}}</p>
+                   <h1>id:{{id}}</h1>
+                   <h2>name:{{name}}</h2>
+                   <h3>gender:{{gender}}</h3>
+                   <h4>age:{{age}}</h4>
                 </div>
                 {{/with}} 
                     <br>
@@ -20,10 +20,10 @@
                 {{#each data}}
                     {{#with friends}}
                         <div>
-                          <span>{{id: 2}}</span>
-                          <samp>{{name: 'Jane Smith'}}</samp>
-                          <b>{{gender: 'Female'}}</b>
-                          <article>{{age: 27}}</article>
+                          <span>id:{{id}}</span>
+                          <samp>name:{{name}}</samp>
+                          <b>gender:{{gender}}</b>
+                          <article>age:{{age}}</article>
                         </div>
                     {{/with}}    
                 {{/each}}
